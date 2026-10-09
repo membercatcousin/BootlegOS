@@ -13,7 +13,7 @@ use u8g2_fonts::{fonts, FontRenderer};
 fn main() -> Result<(), core::convert::Infallible> {
     let mut display: SimulatorDisplay<Rgb565> = SimulatorDisplay::new(Size::new(240, 240));
     let output_settings = OutputSettingsBuilder::new().scale(2).build();
-    let mut window = Window::new("BootlegOS v0.1 (Rolling)", &output_settings);
+    let mut window = Window::new("BootlegOS v0.2 (Nightly)", &output_settings);
 
     window.update(&display);
 
